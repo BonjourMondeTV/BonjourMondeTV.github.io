@@ -1,0 +1,110 @@
+@import url("https://use.typekit.net/fer8iml.css");
+
+/*
+    Bebas Neue Regular :
+font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 400;font-style: normal;
+
+    Bebas Neue Book :
+font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 300;font-style: normal;
+
+    Bebas Neue Bold :
+
+font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal;
+*/
+body{overflow-x: hidden;}
+h1{font-size: 5vw; margin-top: -0.1vw;font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal;}
+h2{font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 300;font-style: normal;font-size: 3vw;margin-top: -5.5vw;line-height: 25px;}
+.link p{font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal; font-size: 7vh;margin-top:7.6vh;}
+h3{font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal; font-size: 6vw;}
+#logo{height: 20vw; margin-top: 8vh;}
+#logomembre{height: s0vw; margin-top: -9vh;border-radius:50% ; border: solid 10px #fff;}
+body, .link, .logo{display: flex;flex-direction: column;align-items: center;}
+.button{background-color: #19375b;color: rgb(255, 255, 255);margin-top: 2vh;height: 5vh;display: flex;align-items: center; justify-content: space-between;border: 1vh solid #19375b;}
+.button img{height: 5.5vh}
+.members{width:52vw;}
+.member{display: flex;flex-direction: row;justify-content: space-evenly;}
+.members img{height: 7vw; border-radius: 50%;}
+.member div{width: 7vw;text-align: center;text-align: center;}
+.member p{margin-top: 0px;font-size: 2vw; font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal;}
+#desc{width: 52vw;text-align: justify;font-family: Arial, Helvetica, sans-serif;}
+#date{width: 70vw;font-family:bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal; text-align: right; font-size: x-large;margin-bottom: 50px;}
+.color{background-color: #19375b; width: 110%;height: 130px;margin-top: -10px;}
+#backhome{height: 100px;position: absolute;top: 10px;left: 10px;}
+#legal{font-family: Arial, Helvetica, sans-serif; font-size: smaller;}
+@media screen and (max-width: 800px){
+    .link p{font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal; font-size: 7vw;margin-top:7.8vw;}
+    .button{background-color: #19375b;color: rgb(255, 255, 255);margin-top: 2vw;height: 6vw;display: flex;align-items: center; justify-content: space-between;border: 1vw solid #19375b;}
+    .button img{height: 5vw}
+    
+}
+
+@media screen and (min-width:1000px){
+    #logo, #logomembre{height: 10vw;};
+    #logomembre{margin-top: -6vh};
+    h1{font-size: 4vw; margin-top: 0.5vh;font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal;}
+    h2{font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 300;font-style: normal;font-size: 2vw;margin-top: -3.7vw;}
+    h3{font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal; font-size: 3vw;}
+}
+
+@media screen and (orientation:portrait) {
+    #logomembre{height: 20vw; margin-top: -5vh;border-radius:50% ; border: solid 5px #fff;}
+    #logo{height: 20vw}
+    h1{font-size: 4vw; margin-top: 0.5vh;font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal;}
+    h2{font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 300;font-style: normal;font-size: 2vw;margin-top: -3.7vw;}
+    h3{font-family: bebas-neue-by-fontfabric, sans-serif;font-weight: 700;font-style: normal; font-size: 3vw;}
+    #desc{font-size: small; width: 70vw}
+    .members{margin-top: 5vh;}
+    .link{margin-top: 5vh;}
+    .members h3{font-size: x-large;}
+    h1{font-size: xx-large;}
+    h2{font-size: large;}
+    .members img{height: 17vw;}
+    .member div{width: 17vw; margin-left: 10px;margin-right: 10px;}
+    .member p{font-size: medium;}
+    .member{flex-wrap: wrap;}
+    #backhome{height: 50px;position: absolute;top: 9px;left: 10px;}
+    .color{height: 70px;}
+}
+
+@media screen and (orientation:landscape) {.button{width: 52vw;}}
+@media screen and (orientation:portrait) {.button{width: 71vw;margin-top: 3vh;}}
+@media screen and (orientation:landscape) {#date{width: 52vw;}}
+@media screen and (orientation:portrait) {#date{width: 71vw;}.members{width:71vw;}}
+
+@media screen and (orientation:landscape) {
+    .button:hover{
+        justify-content:center;
+        text-align: right;
+    }
+    
+    .button:hover p{
+        width: 52vw;
+        animation-name:hidde;
+        animation-duration: 1000s;
+    }
+    
+    .button:hover img{
+        animation-name: logoalign;
+        animation-duration: 600ms;
+        position: absolute;}
+    
+    @keyframes logoalign {
+        from {
+            margin-right: 40vw;
+        }
+        to{
+            margin-right: 0vw;
+        }
+    }
+    
+    @keyframes hidde {
+        0%{display: block;}
+        0.05%{display: none;color: #ffffff00;}
+        100%{display: none;}
+    }
+
+    .member div:hover img{
+        background: #19375b;
+        opacity: 75%;
+    }
+}
